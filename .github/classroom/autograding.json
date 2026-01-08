@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1 (Unsorted)",
+      "setup": "javac src/Cupcake.java",
+      "run": "java -cp src Cupcake",
+      "input": "3\n1 3 2",
+      "output": "11",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Already Sorted Ascending (Needs Reverse)",
+      "setup": "javac src/Cupcake.java",
+      "run": "java -cp src Cupcake",
+      "input": "4\n5 10 20 40",
+      "output": "235",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Already Sorted Descending (Ideal)",
+      "setup": "javac src/Cupcake.java",
+      "run": "java -cp src Cupcake",
+      "input": "3\n10 5 2",
+      "output": "28",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Larger Input",
+      "setup": "javac src/Cupcake.java",
+      "run": "java -cp src Cupcake",
+      "input": "5\n7 4 9 6 2",
+      "output": "79",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
