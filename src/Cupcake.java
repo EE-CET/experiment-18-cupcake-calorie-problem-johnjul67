@@ -21,12 +21,9 @@ public class Cupcake
                                 }       
                         }
                 }
-                long miles=0,power=0;
-                for(int i=n-1;i>=0;i--)
-                {
-                        miles+=(arr[i]*Math.pow(2, power));
-                        power++;
-                }
+                long miles = 0;
+                for (int i = 0; i < n; i++) 
+                        miles += arr[i] * (1L << i); 
                 System.out.println(miles);
         }   
 }
